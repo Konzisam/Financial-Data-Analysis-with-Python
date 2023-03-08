@@ -1,5 +1,5 @@
-This folder contains my portfolio projects: 
+This repository contains files for the analysis of E-charging infrastracture in Germany.
 
-1. Charging points in germany analysis
+I have an artticle on [medium](https://medium.com/@konzisamuel/e-charging-infrastructure-in-germany-dae0a3b14f18).
 
-2. Stocks data analysis
+Also after cleaning the data I made a dashboard which is on my [tableau public](https://public.tableau.com/app/profile/samuel.konzi/viz/AnalysisofE-ChargingpointsinGermany/overview)
