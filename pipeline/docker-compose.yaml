@@ -1,0 +1,11 @@
+services:
+  dbt-bq:
+    build:
+      context: .
+      target: dbt-bigquery
+    image: dbt/bigquery
+    volumes:
+      - .:/usr/app
+      - ~/.dbt/:/root/.dbt/
+      - ~/.google/credentials/zoomcamp-380308-986e2fd04f13.json:/.google/credentials/zoomcamp-380308-986e2fd04f13.json
+    network_mode: host

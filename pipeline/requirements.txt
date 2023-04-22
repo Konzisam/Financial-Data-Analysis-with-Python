@@ -1,0 +1,7 @@
+beautifulsoup4==4.12.2
+deep_translator==1.10.1
+pandas==1.5.2
+pandas==1.5.3
+prefect==2.7.7
+prefect_gcp==0.2.4
+Requests==2.28.2

@@ -1,0 +1,101 @@
+,City_Rank,City,Federal_state,Population
+1,1,Berlin,Berlin,3275000
+2,2,Hamburg,Hamburg,1686100
+3,3,München,Bavaria,1185400
+4,4,Köln,Northrhine-Westfalia,965300
+5,5,Frankfurt,Hessen,648000
+6,6,Essen,Northrhine-Westfalia,588800
+7,7,Dortmund,Northrhine-Westfalia,587600
+8,8,Stuttgart,Baden-Württemberg,581100
+9,9,Düsseldorf,Northrhine-Westfalia,568900
+10,10,Bremen,Bremen,527900
+11,11,Hannover,Lower Saxony,516300
+12,12,Duisburg,Northrhine-Westfalia,513400
+13,13,Nürnberg,Bavaria,486700
+14,14,Leipzig,Saxony,486100
+15,15,Dresden,Saxony,473300
+16,16,Bochum,Northrhine-Westfalia,388100
+17,17,Wuppertal,Northrhine-Westfalia,365400
+18,18,Bielefeld,Northrhine-Westfalia,320900
+19,19,Bonn,Northrhine-Westfalia,307500
+20,20,Mannheim,Baden-Württemberg,306100
+21,21,Karlsruhe,Baden-Württemberg,279600
+22,22,Gelsenkirchen,Northrhine-Westfalia,276200
+23,23,Wiesbaden,Hessen,269200
+24,24,Münster,Northrhine-Westfalia,265900
+25,25,Mönchengladbach,Northrhine-Westfalia,264400
+26,26,Chemnitz,Saxony,255600
+27,27,Augsburg,Bavaria,253800
+28,28,Braunschweig,Lower Saxony,243700
+29,29,Aachen,Northrhine-Westfalia,241300
+30,30,Krefeld,Northrhine-Westfalia,238000
+31,31,Halle,Saxony-Anhalt,237400
+32,32,Kiel,Schleswig-Holstein,229900
+33,33,Magdeburg,Saxony-Anhalt,224100
+34,34,Oberhausen,Northrhine-Westfalia,221700
+35,35,Lübeck,Schleswig-Holstein,213400
+36,36,Freiburg,Baden-Württemberg,206300
+37,37,Hagen,Northrhine-Westfalia,201700
+38,38,Erfurt,Thuringia,195000
+39,39,Kassel,Hessen,193500
+40,40,Rostock,Mecklenburg-Vorpommern,192100
+41,41,Mainz,Rhineland-Palatinate,186700
+42,42,Hamm,Northrhine-Westfalia,180300
+43,43,Saarbrücken,Saarland,180000
+44,44,Herne,Northrhine-Westfalia,174200
+45,45,Mülheim,Northrhine-Westfalia,173000
+46,46,Solingen,Northrhine-Westfalia,164500
+47,47,Osnabrück,Lower Saxony,164000
+48,48,Ludwigshafen,Rhineland-Palatinate,162000
+49,49,Leverkusen,Northrhine-Westfalia,161700
+50,50,Oldenburg,Lower Saxony,157600
+51,51,Neuss,Northrhine-Westfalia,150400
+52,52,Paderborn,Northrhine-Westfalia,141200
+53,53,Heidelberg,Baden-Württemberg,139700
+54,54,Darmstadt,Hessen,137800
+55,55,Potsdam,Brandenburg,128700
+56,56,Würzburg,Bavaria,127200
+57,57,Göttingen,Lower Saxony,127100
+58,58,Regensburg,Bavaria,125400
+59,59,Recklinghausen,Northrhine-Westfalia,124500
+60,60,Bottrop,Northrhine-Westfalia,122100
+61,61,Wolfsburg,Lower Saxony,119300
+62,62,Heilbronn,Baden-Württemberg,118500
+63,63,Ingolstadt,Bavaria,118000
+64,64,Ulm,Baden-Württemberg,117700
+65,65,Remscheid,Northrhine-Westfalia,117700
+66,66,Pforzheim,Baden-Württemberg,117100
+67,67,Bremerhaven,Bremen,116800
+68,68,Offenbach,Hessen,115500
+69,69,Fürth,Bavaria,111900
+70,70,Reutlingen,Baden-Württemberg,111400
+71,71,Salzgitter,Lower Saxony,111400
+72,72,Siegen,Northrhine-Westfalia,108900
+73,73,Gera,Thuringia,108800
+74,74,Koblenz,Rhineland-Palatinate,108800
+75,75,Moers,Northrhine-Westfalia,106600
+76,76,Bergisch Gladbach,Northrhine-Westfalia,106100
+77,77,Cottbus,Brandenburg,105000
+78,78,Hildesheim,Lower Saxony,103700
+79,79,Witten,Northrhine-Westfalia,103400
+80,80,Zwickau,Saxony,100900
+81,81,Erlangen,Bavaria,100100
+82,82,Iserlohn,Northrhine-Westfalia,99800
+83,83,Trier,Rhineland-Palatinate,99100
+84,84,Kaiserslautern,Rhineland-Palatinate,98800
+85,85,Jena,Thuringia,97500
+86,86,Schwerin,Mecklenburg-Vorpommern,97400
+87,87,Gütersloh,Northrhine-Westfalia,97100
+88,88,Marl,Northrhine-Westfalia,94500
+89,89,Lünen,Northrhine-Westfalia,91700
+90,90,Esslingen,Baden-Württemberg,91000
+91,91,Velbert,Northrhine-Westfalia,90500
+92,92,Ratingen,Northrhine-Westfalia,89800
+93,93,Düren,Northrhine-Westfalia,89600
+94,94,Ludwigsburg,Baden-Württemberg,88000
+95,95,Wilhelmshaven,Lower Saxony,87800
+96,96,Hanau,Hessen,86400
+97,97,Minden,Northrhine-Westfalia,84400
+98,98,Flensburg,Schleswig-Holstein,83800
+99,99,Dessau,Saxony-Anhalt,81800
+100,100,Villingen-Schwenningen,Baden-Württemberg,81500

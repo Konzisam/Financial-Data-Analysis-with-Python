@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+    - name: raw_to_stg
+      database: zoomcamp-380308
+      schema: raw_echarging
+
+      # loaded_at_field: record_loaded_at
+      tables:
+        - name: raw
+        - name: cities
