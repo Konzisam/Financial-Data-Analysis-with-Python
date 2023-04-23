@@ -32,5 +32,5 @@ Unfortunately, its now hard to track the months and so we work with the latest r
 - **Python:** use python library pandas to fetch the data, save a copy locally and load it to gcs bucket.
 
 ### Achitechture
-![dashboard](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/echarging_dashboard.png)
+![pipeline](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/architechture.png)
 
