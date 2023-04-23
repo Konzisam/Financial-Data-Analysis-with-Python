@@ -1,4 +1,4 @@
-## E-Charging infrastructure in germany: Monthly Release Automation Pipeline
+## E-Charging infrastructure in germany: Monthly Release Pipeline
 I have been  working on this project for a while and decided to make it my capstone project for the 2023 Data Engineering Zoomcamp. 
 I have previously done some cohorrt analysis of the data using **SQL** and **python**.
 I wanted to build  a pipeline so that the data can be prepared for visualizaion easily. 
