@@ -1,1 +1,1 @@
-This is a file containinig  analysis
+Echarging infrastructure analysis using SQL and Python.
