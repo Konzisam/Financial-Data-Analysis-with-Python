@@ -31,3 +31,6 @@ Unfortunately, its now hard to track the months and so we work with the latest r
 - **DBT:** In our case leveraged DBT Core version to transform the data in our warehouse and preparing it for consumption by BI tools.
 - **Python:** use python library pandas to fetch the data, save a copy locally and load it to gcs bucket.
 
+### Achitechture
+![alt text](image.jpg)
+
