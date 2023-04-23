@@ -7,7 +7,7 @@ With this project we do just that; By a trigger on the prefect UI, we fetch the 
 transform it and load it to Google cloud storage then to Bigquery warehouse. 
 It is further consumed by Looker studio, providing visualizations of key insights.
 
-## Background and dataset
+### Background and dataset
 In Germany the charging infrastructure has seen rapid growth over the years.
 Take a case where an investor may be interested in an overview of the e-mobility trend?
 We would want an all in one place where on can see the data and compare over time, states and other parameters.
@@ -17,3 +17,17 @@ The Federal network agency website (Bundesnetzagentur.de), a place where compani
 can find information on the agencies’ topics,releases updated data on e-charging infrastructure. 
 
 The data is was being updated on a monthly basis till January this year(it seems to have be paused or stopped) but still we create a pipeline that fetches the data once there a new release.
+
+Unfortunately, its now hard to track the months and so we work with the latest release, and save it in our google cloud storage.
+
+### Tools
+- **Terraform:** Define and provision Infrastructure.
+- **Docker:** to containerize code; in our case we containerize the transformation process.
+- **Prefect:** to orchestrate,  trigger and monitor the entire workflow.
+- **Github:** to host our code and track changes.
+- **Google cloud storage:** Once data has been fetched its loaded in cloud storage, which is our data lakehouse.
+- **Google Bigquery:** this is the Data warehouse.
+- **Looker studio:** easily connects to bigquery and so we use it to visualize the data.
+- **DBT:** In our case leveraged DBT Core version to transform the data in our warehouse and preparing it for consumption by BI tools.
+- **Python:** use python library pandas to fetch the data, save a copy locally and load it to gcs bucket.
+
