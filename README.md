@@ -34,3 +34,13 @@ Unfortunately, its now hard to track the months and so we work with the latest r
 ### Architechture
 ![pipeline](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/architechture.png)
 
+## Flow
+<ol><li>The data is fetched using pandas, initial cleaning performed so that we are able to load it to Bigquery. Bigquery has specifications of the allowed schema components e.g [columns names] (https://cloud.google.com/bigquery/docs/schemas). It was surprisingly quite challenging as I kept getting the following errors, with big query not able to detect the schema.(sample error) I finally managed to get around it, hence the initial cleaning. Ideally we would have loaded the data as is to GCS (data lake) and perform transformations from there but decided to keep it simple.</li>
+  <li>Load the data to an external table in bigquery from GCS bucket.</li>
+<li>We do not perform any partitioning and clustering as the dataset is not large.</li>
+<li>Perform dbt transformation on the external table, create views on the staging schrma to see the development status and then load the transformed data to our production schema.</li>
+  <li>Build visualizations of the production schema.</li>
+  
+  
+ This is the final dashboard and can be found [here](https://lookerstudio.google.com/reporting/122a39cc-6be8-4bd6-b9f7-ef9c80cab32b/page/gzgND>).
+ 
