@@ -1,7 +1,6 @@
 ## E-Charging infrastructure in germany: Monthly Release Pipeline
 I have been  working on this project for a while and decided to make it my capstone project for the 2023 Data Engineering Zoomcamp. 
-Previously I ran some cohort analysis of the data using [**SQL**](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/analysis/Charging_infrastructure_analysis_SQL.ipynb) and [**Python**](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/analysis/Charging_infrastructure_analysis_Python.ipynb).
-I wanted to build  a pipeline so that the data can be prepared for visualizaion easily. 
+Previously I ran some cohort analysis of the data using [**SQL**](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/analysis/Charging_infrastructure_analysis_SQL.ipynb) and [**Python**](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/analysis/Charging_infrastructure_analysis_Python.ipynb)but wanted to build  a pipeline so that the data can be prepared for visualizaion. 
 
 With this project we do just that; By a trigger on the prefect UI, we fetch the data, 
 transform it and load it to Google cloud storage then to Bigquery warehouse. 
@@ -10,11 +9,11 @@ It is further consumed by Looker studio, providing visualizations of key insight
 ### Background and dataset
 In Germany the charging infrastructure has seen rapid growth over the years.
 Take a case where an investor may be interested in an overview of the e-mobility trend?
-We would want an all in one place where one can see the data and compare over time, states and other parameters of intrest.
-For that we need trustworthy data to work with.
+We would want an all in one place dashboard, where one can see the data and compare over time, states and other parameters of intrest.
+For that we need trustworthy data to work with, perform the necessary clean up, to present the required metrics succintly.
 
-The Federal network agency website (Bundesnetzagentur.de), a place where companies, authorities and interested trade visitors 
-can find information on the agencies’ topics,releases updated data on e-charging infrastructure. 
+The Federal network agency website [(Bundesnetzagentur.de)](https://www.bundesnetzagentur.de/DE/Sachgebiete/ElektrizitaetundGas/Unternehmen_Institutionen/HandelundVertrieb/Ladesaeulenkarte/Ladesaeulenkarte_node.html), a place where companies, authorities and interested trade visitors 
+can find information on the agencies’ topics, releases updated data on e-charging infrastructure. 
 
 The data is was being updated on a monthly basis till January this year(it seems to have be paused or stopped) but still we create a pipeline that fetches the data once there a new release.
 
@@ -37,8 +36,11 @@ Unfortunately, its now hard to track the months and so we work with the latest r
 ## Flow
 <ol><li>The data is fetched using pandas, initial cleaning performed so that we are able to load it to Bigquery. Bigquery has specifications of the allowed schema components  for example column names.
 
-It was surprisingly quite challenging as I kept getting the following errors, with big query not able to detect the schema.(sample error) I finally managed to get around it, hence the initial cleaning.
+It was surprisingly quite challenging as I kept getting errors, with big query not able to detect the schema as pandas did. Some records had commas in them but I finally managed to get around it, hence the initial cleaning.
 
+Here is one of the errors.
+
+![error](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/bigquery_error.png)
 
 Ideally we would have loaded the data as is to GCS (data lake) and perform transformations from there but decided to keep it simple.</li>
   <li>Load the data to an external table in bigquery from GCS bucket.</li>
@@ -50,4 +52,10 @@ Below is a snapshot of the final dashboard.
 It can be found [here](https://lookerstudio.google.com/reporting/122a39cc-6be8-4bd6-b9f7-ef9c80cab32b/page/gzgND>).
 
 ![dashboard](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/echarging_dashboard.png)
+
+
+
+## To replicate the project:
+
+Follow [these Intructions](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/Replicate.md)
  
