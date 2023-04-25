@@ -37,7 +37,8 @@ Here are initial guidelines to  install the required tools.
 6. Prefect is already installed, when we ran requirements.txt so start prefect orion server locally
   - Open another terminal window and activate the environment (`conda activate <your environment name>`)
   - Register GCP Blocks using the command: `prefect block register -m prefect_gcp`
-  [blocks](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/bigquery_register.png)
+  
+  ![blocks](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/bigquery_register.png)
   - Create prefect GCP blocks on the prefect UI or using [this](https://github.com/discdiver/prefect-zoomcamp/blob/main/blocks/make_gcp_blocks.py) code: 
 In our case, we do not require dbt blocks as dbt is running on docker and so we trigger it inside our script instead of using a prefect block. 
 
@@ -48,11 +49,13 @@ To go further and create a prefect deployment:
 7. Create  and apply deployments by running the following command. 
 `prefect deployment build ./your-main-flow -n  “parent_etl”` (this is the name of the main flow function)
 It creates a 'parent_etl-deployment.yaml` file with metadata required by the agent to trigger the flow.
-[deploy](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/deploy.png)
+
+![deploy](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/deploy.png)
+
 8. Next run the command: `prefect deployment apply parent_etl-deployment.yaml`. 
 9. Run the command `prefect agent start --work-queue "default"`
 10. On the Prefect UI if we trigger a quick run, the data will be loaded to GCS and big query and we see logs of the process as below.
-[success](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/successs.png)
+![success](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/successs.png)
 
 
   
