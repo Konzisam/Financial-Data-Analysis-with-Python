@@ -38,8 +38,13 @@ Here are initial guidelines to  install the required tools.
   - Open another terminal window and activate the environment (`conda activate <your environment name>`)
   - Register GCP Blocks using the command: `prefect block register -m prefect_gcp`
   - Create prefect GCP blocks on the prefect UI or using [this](https://github.com/discdiver/prefect-zoomcamp/blob/main/blocks/make_gcp_blocks.py) code: 
-In our dcase, we do not require dbt blocks as dbt is running on docker and so we trigger it inside our script instead of using a prefect block. 
-7. Create  and apply deployments. For deployment you require the following command. 
+In our case, we do not require dbt blocks as dbt is running on docker and so we trigger it inside our script instead of using a prefect block. 
+
+At this point you can actuall run the flow but using the command line. By running `python etl.py`, the script will run, calling all the processes in the flow.
+
+To go further and create a prefect deployment:
+
+7. Create  and apply deployments by running the following command. 
 `prefect deployment build ./your-main-flow -n  “parent_etl”` (this is the name of the main flow function)
 It creates a 'parent_etl-deployment.yaml` file with metadata required by the agent to trigger the flow.
 
