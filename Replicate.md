@@ -31,26 +31,28 @@ Here are initial guidelines to  install the required tools.
 4. Set up the infrastructure needed using terraform
 - Run `terraform init` , then `terraform plan` ( see an overview), then `terraform apply` to set up the infrastructure.
 
-5. Follow [these steps](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_4_analytics_engineering/docker_setup) to run dbt and bigquery using docker.
+5. Follow [these steps](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_4_analytics_engineering/docker_setup) to run dbt with bigquery adapter using docker.
 
 
-6. Prefect is already installed, when we ran requirements.txt so tart prefect orion server locally
+6. Prefect is already installed, when we ran requirements.txt so start prefect orion server locally
   - Open another terminal window and activate the environment (`conda activate <your environment name>`)
   - Register GCP Blocks using the command: `prefect block register -m prefect_gcp`
+  [blocks](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/bigquery_register.png)
   - Create prefect GCP blocks on the prefect UI or using [this](https://github.com/discdiver/prefect-zoomcamp/blob/main/blocks/make_gcp_blocks.py) code: 
 In our case, we do not require dbt blocks as dbt is running on docker and so we trigger it inside our script instead of using a prefect block. 
 
-At this point you can actuall run the flow but using the command line. By running `python etl.py`, the script will run, calling all the processes in the flow.
+At this point you can actually run the flow but using the command line. By running `python etl.py`, the script will run, calling all the processes in the flow.
 
 To go further and create a prefect deployment:
 
 7. Create  and apply deployments by running the following command. 
 `prefect deployment build ./your-main-flow -n  “parent_etl”` (this is the name of the main flow function)
 It creates a 'parent_etl-deployment.yaml` file with metadata required by the agent to trigger the flow.
-
+[deploy](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/deploy.png)
 8. Next run the command: `prefect deployment apply parent_etl-deployment.yaml`. 
 9. Run the command `prefect agent start --work-queue "default"`
-10. On the Prefec UI if we trigger a quick run, the data will be loaded to GCS and big query and we see logs of the process. 
+10. On the Prefect UI if we trigger a quick run, the data will be loaded to GCS and big query and we see logs of the process as below.
+[success](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/successs.png)
 
 
   
