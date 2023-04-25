@@ -139,7 +139,7 @@ def load_bq(uris):
 @task()
 def dbt_transform():
     'Trigger dbt workflow using dbt build'
-    os.system('docker-compose run --workdir="//usr/app/dbt/echarging_dbt" dbt-bq run')
+    os.system('docker-compose run --workdir="//usr/app/dbt/echarging_dbt" dbt-bq build -t prod')
 
 
 @flow()

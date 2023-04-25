@@ -2,4 +2,15 @@ target/
 dbt_modules/
 dbt_packages/
 logs/
-echarging.db/
+
+__pycache__
+
+#db creaated in analysis
+echarging.db
+
+#terraform files
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.lock.hcl
+terraform.exe
+.terraform
