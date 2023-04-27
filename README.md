@@ -57,5 +57,5 @@ It can be found [here](https://lookerstudio.google.com/reporting/122a39cc-6be8-4
 
 ## To replicate the project:
 
-Follow [these Intructions](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/Replicate.md)
+Follow [these Instructions](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/Replicate.md)
  
