@@ -1,6 +1,6 @@
 ## E-Charging infrastructure in Germany: Monthly Release Data Pipeline
 I have been  working on this project for a while and decided to make it my capstone project for the 2023 Data Engineering Zoomcamp. 
-Previously I ran some cohort analysis of the data using [**SQL**](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/analysis/Charging_infrastructure_analysis_SQL.ipynb) and [**Python**](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/analysis/Charging_infrastructure_analysis_Python.ipynb)but wanted to build  a pipeline so that the data can be prepared for visualizaion. 
+Previously I ran some interesting analysis of the data using [**SQL**](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/analysis/Charging_infrastructure_analysis_SQL.ipynb) and [**Python**](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/analysis/Charging_infrastructure_analysis_Python.ipynb)but wanted to build  a pipeline so that the data can be prepared for visualizaion. 
 
 With this project we do just that; By a trigger on the prefect UI, we fetch the data, 
 transform it and load it to Google cloud storage then to Bigquery warehouse. 
