@@ -36,9 +36,7 @@ Unfortunately, its now hard to track the months and so we work with the latest r
 ## Flow
 <ol><li>The data is fetched using pandas, initial cleaning performed so that we are able to load it to Bigquery. Bigquery has specifications of the allowed schema components  for example column names.
 
-It was surprisingly quite challenging as I kept getting errors, with big query not able to detect the schema as pandas did. Some records had commas in them but I finally managed to get around it, hence the initial cleaning.
-
-Here is one of the errors.
+The task proved to be unexpectedly challenging due to schema detection discrepancies between BigQuery and pandas. Some records contained embedded commas, causing schema parsing errors. After identifying the issue, I implemented additional data cleaning steps to resolve it effectively. Below is an example of one such error.
 
 ![error](https://github.com/Konzisam/echarging_infrastracture_pipeline/blob/main/images/bigquery_error.png)
 
