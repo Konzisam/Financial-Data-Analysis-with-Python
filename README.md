@@ -4,8 +4,8 @@ Previously I ran some interesting analysis of the data using [**SQL**](https://g
 
 I finally got to do just that; By a trigger on the prefect UI, we fetch the data, 
 transform it and load it to Google cloud storage then to Bigquery warehouse. 
-It is further consumed by Looker studio, providing visualizations of key insights.
-Ofcourse the infrastructure is already provisioned using terraform.
+It is further consumed by Looker studio, providing visualizations of key insights.\
+The required infrastructure was provisioned using terraform.
 
 ### Background and dataset
 In Germany the charging infrastructure has seen rapid growth over the years.
