@@ -10,7 +10,7 @@ The required infrastructure was provisioned using terraform.
 ### Background and dataset
 In Germany the charging infrastructure has seen rapid growth over the years.
 Take a case where an investor may be interested in an overview of the e-mobility trend?
-We would want an all in one place dashboard, where one can see the data and compare over time, states and other parameters of intrest.
+They would want an all in one place dashboard, where one can see the data and compare over time, states and other parameters of intrest.
 For that we need trustworthy data to work with, perform the necessary clean up, to present the required metrics succintly.
 
 The Federal network agency website [(Bundesnetzagentur.de)](https://www.bundesnetzagentur.de/DE/Sachgebiete/ElektrizitaetundGas/Unternehmen_Institutionen/HandelundVertrieb/Ladesaeulenkarte/Ladesaeulenkarte_node.html), a place where companies, authorities and interested trade visitors 
